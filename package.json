@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap-task",
+  "version": "1.0.0",
+  "description": "This is the task written using bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss/common.scss -o css"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1"
+  }
+}

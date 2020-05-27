@@ -1,0 +1,263 @@
+
+$theme-colors: (
+  "primary": #50c3af,
+  "secondary": #d2d5da,
+  "success": #50c3af
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "PT Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 1.8rem;
+  border: none;
+  outline: none;
+  @extend .btn-primary;
+  padding: 1rem 3.5rem;
+  .button--big {
+    width: 235px;
+  }
+}
+
+.header {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 9rem;
+
+  .logo {
+    display: inline-block;
+    padding-top: 5rem;
+  }
+
+  .nav__list {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 3.5rem 4.5rem;
+
+    .list__item {
+      margin-right: 35px;
+      font-size: 13px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .list__link {
+      color: #fafafa;
+    }
+  }
+
+  .welcome {
+
+    .welcome__title {
+      font-size: 53px;
+      font-family: "Ubuntu", sans-serif;
+      margin-bottom: 3rem;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      margin-bottom: 3rem;
+
+      &:before {
+        content: "";
+        width: 6.25rem;
+        height: 2px;
+        opacity: 0.44;
+        position: relative;
+        @extend .mx-auto;
+        @extend .bg-white;
+        @extend .d-none;
+        @extend .d-sm-block;
+        right: 12.5rem;
+        top: 0.6rem;
+      }
+
+      &:after {
+        @extend .subtitle:before;
+        left: 12.5rem;
+        top: -0.6rem;
+      }
+    }
+  }
+}
+
+section {
+  padding: 5rem 4.25rem;
+}
+
+.features,
+.about-us,
+.feedback-and-share {
+  background: #eeeeef;
+}
+
+.examples {
+ padding: 5rem 1rem;
+}
+
+.item {
+  @extend .mb-5;
+  @extend .mb-sm-0;
+
+  span {
+    font-size: 32px;
+    color: #50c3af;
+    @extend .pb-4;
+  }
+
+  .features-item__hr {
+    width: 8.4rem;
+    height: 2px;
+    background-color: #293139;
+    opacity: 0.06;
+    margin-bottom: 25px;
+  }
+}
+
+.section__title {
+  margin-bottom: 21px;
+  font-weight: 700;
+}
+
+.section__title--medium {
+  font-size: 20px;
+}
+
+.section__title--big {
+  font-size: 18px;
+}
+
+.section__description {
+  font-size: 14px;
+  color: #bfc0c3;
+}
+
+.advantages-block .section__description {
+  margin-bottom: 25px;
+}
+
+.advantages-block {
+  .item {
+    margin-bottom: 3rem;
+  }
+}
+
+.examples .section__description {
+  max-width: 255px;
+}
+
+.section__image {
+  margin-bottom: 42px;
+  width: 100%;
+}
+
+.hr {
+  height: 2px;
+  background-color: #293139;
+  opacity: 0.06;
+  margin-bottom: 31px;
+}
+
+.examples {
+  padding-bottom: 5rem;
+}
+
+.section-btn {
+  margin-top: 34px;
+  padding: 11px 17px 14px;
+  line-height: 17px;
+  display: inline-block;
+  color: #fff !important;
+}
+
+.about-us,
+.other {
+  .section-btn {
+    @extend .btn-secondary;
+  }
+  .section__image {
+    margin-bottom: 0;
+  }
+}
+
+.about-us,
+.feedback-and-share,
+.featured {
+  span {
+    margin-right: 15px;
+    color: #c6cbd1;
+    font-size: 18px;
+  }
+}
+
+.featured {
+  @extend .text-white;
+  @extend .bg-success;
+
+  .featured__title {
+    font-size: 15px;
+    width: 275px;
+
+    span {
+      margin-right: 8px;
+    }
+
+    .hr {
+      margin-top: 22px;
+      @extend .bg-white;
+      opacity: 0.2;
+    }
+  }
+
+  .featured-img {
+    margin: 5px 5px;
+  }
+}
+
+.footer {
+  padding: 1.5rem 0.5rem;
+  color: #aaacaf;
+
+  span {
+    color: #787b80;
+  }
+
+  .socials__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .socials__link {
+      color: #aaacaf;
+    }
+  }
+}
